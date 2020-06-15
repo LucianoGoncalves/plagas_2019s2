@@ -33,20 +33,5 @@ class Barrio {
         elementos.addAll(muchosElem)
     }
 
-//    method () {
-//    }
-//
-//    method () {
-//    }
-//
-//    method () {
-//    }
-//
-//    method () {
-//    }
-//
-//    method () {
-//    }
-//
 }
 
