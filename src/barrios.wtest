@@ -1,0 +1,17 @@
+import elementos.*
+import plagas.*
+import barrios.*
+
+test "barrios" {
+    const barrio1 = new Barrio()
+    const hogar1 = new Hogar(nivelMugre = 12, confort = 200)
+    const hogar2 = new Hogar(nivelMugre = 12, confort = 6)
+    const huerta1 = new Huerta(capaProduc = 22)
+    const huerta2 = new Huerta(capaProduc = 99, nivelProduc = 100)
+    const masco2 = new Mascota(nivelSalud = 100)
+    const masco3 = new Mascota(nivelSalud = 160)
+    barrio1.agregarMuchosElem(#{ hogar1, hogar2, huerta1 })
+    assert.that(barrio1.esCopado())
+    barrio1.agregarMuchosElem(#{ huerta2, masco2, masco3 })
+    assert.notThat(barrio1.esCopado())
+}
